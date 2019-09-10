@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>The Crystal Game</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+</head>
+
+<body>
+    <!--jumbotron "Crystal Collector"-->
+    <div class ="container">
+        <div class="jumbotron">
+            <h1>Collect the Crystals</h1>
+        </div>
+    </div>
+
+ <section id="rules">
+     <h1>Rules of the game:</h1>
+     <li>
+         <ul>The rules of the game are pretty simple: collect the crystals!</ul>
+         <ul>To collect the crystals, grab your mouse and start clicking.
+             Each crystal has a value assigned to it, but don't try to 
+             memorize that value, because it changes on each turn!</ul>
+         <ul>Once a crystal is clicked, it's value will be revealed and the 
+             value will be added to your total score.</ul>
+         </ul>
+         <ul>To win, match the value of
+             the crystals to the random number. If the value of the crystals
+             goes above the random number, you have lost.
+         </ul>
+         <ul>After each win or loss, the game will restart with a new random
+             number and the value of each crystal will change, and the fun starts over!
+         </ul>
+     </li>
+ </section>
+ <!--Random number-->
+ <h2>The Random Number: <span id="random"></span></h2> 
+ <!--Total score here-->
+ <h3>Your total score is: <span id="total"></span></h3> 
+ <!--Wins and losses calculated here-->
+ <h3>Your wins: <span id="wins"></span></h3>
+ <h3>Your losses: <span id="losses"></span></h3>
+ <!--4 crystals here in separate boxes-->
+ 
+    <script type="text/javascript" src="assets/javascript/game.js"></script>  
+</body>
+</html>
