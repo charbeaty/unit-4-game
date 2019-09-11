@@ -1,0 +1,32 @@
+
+html, body {
+    background:url(https://www.desktopbackground.org/download/o/2012/02/05/339042_beautiful-white-sand-beach-wallpaper-images_1600x900_h.jpg);
+
+}
+.jumbotron {
+    font-family: 'Modak', cursive;
+    background-color: white;
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+}
+
+h1 {
+    font-family: 'Modak', cursive;
+}
+
+h2 {
+    font-family: 'Modak', cursive;
+}
+
+h3 {
+    font-family: 'Modak', cursive;
+}
+
+li {
+    font-family: 'Rancho', cursive;
+    font-size: 24px;
+}
+/* use Rancho font for list
