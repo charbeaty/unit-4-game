@@ -3,11 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>The Seashell Game</title>
+    <title>The Crystal Game</title>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link href="https://fonts.googleapis.com/css?family=Aclonica|Chilanka|Leckerli+One|Mali|Modak|Rancho&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Aclonica|Chilanka|Leckerli+One|Mali|Modak|Rancho&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
     <script src="https://code.jquery.com/jquery.js"></script>
 
@@ -15,55 +16,63 @@
 
 <body>
     <!--jumbotron "Crystal Collector"-->
-    <div class ="container">
+    <div class="container">
         <div class="jumbotron">
-            <h1>Collect the Seashells</h1>
+            <h1>Collect the Crystals</h1>
         </div>
-    
-<div class="row">
-    <div class="col-md-7">
- <section id="rules">
-     <h1>Rules of the game:</h1>
-     <li>
-         <ul>The rules of the game are pretty simple: Collect the seashells,
-             and try to match the random number!</ul>
-         <ul>To collect the seashells, grab your mouse (preferably a computer mouse),
-             and start clicking.</ul>
-            <ul> Each seashell has a value assigned to it, but don't try to 
-             memorize that value, because it changes on each turn! <strong>Muahahaha!</strong></ul>
-         <ul>Once a seashell is clicked, it's value will be added to your total score.</ul>
-         </ul>
-         <ul>To win, match the value of
-             the seashell to the random number. If the value of the seashells
-             goes above the random number, you have lost. 
-         </ul>
-         <ul>You will have the chance
-            to redeem yourself, because once you lose (or win) 
-            the game will start all over.
-         </ul>
-     </li>
- </section>
-</div>
 
- <!--Random number-->
- <div class="col-md-5">
- <h2>The Random Number: <span id="random"></span></h2>
-</div> 
-</div>
-<!--4 crystals here in separate boxes-->
-<img src="https://cdn.clipart.email/873aa83dfd0fbcfd6724c405eadaedab_original-mermaid-shell-holographic-stickers-by-royal-sass-_800-672.jpeg" alt="Seashell" class="image">
-<img src="https://cdn.clipart.email/a5b67872ab1e7dfe342c8fb3f51245ac_turquoise-scallop-shell-original-art-by-traceygurleydesigns-_570-570.jpeg" alt="Seashell" class="image">
-<img src="https://cdn.clipart.email/5b994ca924a408013f3ecd1e693ef8bc_28-collection-of-mermaid-shells-clipart-high-quality-free-_600-600.jpeg" alt="Seashell" class="image">
-<img src="https://cdn.clipart.email/4c814c34f79a96e0cf02933ab1c54502_shell-clipart-jokingartcom-shell-clipart_550-504.png" alt="Seashell" class="image"> 
+        <div class="card card-default">
+            <div class="card-body">
+
+                <p>The rules of the game are pretty simple: Collect the crystals,
+                    and try to match the random number!
+                    Each crystal has a value assigned to it, but don't try to
+                    memorize that value, because it changes on each turn!
+                    Once a crystal is clicked, it's value will be added to your total score.
+
+                    To win, match the value of
+                    the crystal to the random number. If the value of the crystals
+                    goes above the random number, you have lost. </p>
+
+            </div>
+        </div>
+        </br>
+        <!--Random number-->
+        <div class="card card-default">
+            <div class="card-body">
+                <h2>The Random Number: <span id="random"></span></h2>
+            </div>
+        </div>
+        <!--4 crystals here in separate boxes-->
+        <div class="card card-default">
+            <div class="card-body" id="gemstones">
+                <img src="assets/images/gemstone.jpg" alt="jewel" class="image">
+                <img src="assets/images/gemstone-2.jpg" alt="jewel-2" class="image">
+                <img src="assets/images/gemstone-3.jpg" alt="jewel-3" class="image">
+                <img src="assets/images/gemstone-4.jpg" alt="jewel-4" class="image">
+
+            </div>
+        </div>
 
 
-<!--Total score here-->
- <h3>Your total score is: <span id="total"></span></h3> 
- <!--Wins and losses calculated here-->
- <h3>Your wins: <span id="wins"></span></h3>
- <h3>Your losses: <span id="losses"></span></h3>
- 
-</div>
-    <script type="text/javascript" src="assets/javascript/game.js"></script>  
+        <!--Total score here-->
+        <div class="card card-default">
+            <div class="card-body">
+                <h3>Your total score is: <span id="total"></span></h3>
+            </div>
+        </div>
+        <!--Wins and losses calculated here-->
+        <div class="card card-default">
+            <div class="card-body">
+                <h3>Your wins: <span id="wins"></span></h3>
+            </div>
+        </div>
+        <div class="card card-default">
+            <div class="card-body">
+                <h3>Your losses: <span id="losses"></span></h3>
+            </div>
+        </div>
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
+
 </html>
