@@ -1,0 +1,59 @@
+/**
+ * generateCrystalValue
+ * @param {integer} min - minimum value to generate.
+ * @param {intenter} max - maximum value to generate.
+ * @return {integer} randomNumber - randomly generated number based on minimum and maximum numbers.
+ */
+function generateRandomNumber(min = 0, max = 10) {
+  return Math.floor(Math.random() * Math.floor(+max - +min)) + +min;
+}
+
+$(document).ready(function() {
+  // Set crystal values on page load
+  var red_crystal = generateRandomNumber(19, 120);
+  var blue_crystal = generateRandomNumber(19, 120);
+  var yellow_crystal = generateRandomNumber(19, 120);
+  var green_crystal = generateRandomNumber(19, 120);
+
+  // Store values inside the data attribute of the element
+  $("#red_crystal").attr("data-value", red_crystal);
+  $("#blue_crystal").attr("data-value", blue_crystal);
+  $("#yellow_crystal").attr("data-value", yellow_crystal);
+  $("#green_crystal").attr("data-value", green_crystal);
+
+  // Store values inside the HTML Text of the element
+  $("#red_crystal").text(red_crystal);
+  $("#blue_crystal").text(blue_crystal);
+  $("#yellow_crystal").text(yellow_crystal);
+  $("#green_crystal").text(green_crystal);
+
+  $(".crystal").on('click', function() {
+    $(this).toggleClass("selected_crystal");
+    
+    var sum = parseInt($("#total_sum input").val());
+    
+    // =============[ Option 1 ]=======================
+    sum += $(this).data("value");
+    
+    // =============[ Option 2 ]=======================
+    /*
+    var crystal = $(this).attr("id");
+    
+    if(crystal === "red_crystal"){
+    	sum += red_crystal;
+      
+    }else if(crystal === "blue_crystal"){
+    	sum += blue_crystal;
+      
+    }else if(crystal === "yellow_crystal"){
+    	sum += yellow_crystal;
+      
+    }else if(crystal === "green_crystal"){
+    	sum += green_crystal;
+    } 
+    */
+    
+    // Set new sum
+    $("#total_sum input").val(sum);
+  });
+});
