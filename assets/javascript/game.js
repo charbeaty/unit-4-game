@@ -33,7 +33,7 @@ $(document).ready(function () {
     $(".crystal-image").on('click', function () {
 
         var clicked = $(this).attr("id");
-
+        //debugger
         if (clicked === "crystal1") {
             total = total + crystalNumber1;
         }
